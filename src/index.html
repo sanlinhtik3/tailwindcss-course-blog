@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berry Leaf | Blog</title>
+    <link rel="icon" href="logo.svg">
+    <!-- <link rel="stylesheet" href="/node_modules/swiper/swiper-bundle.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.css" integrity="sha512-pJrGHWDVOeiy4UkMtHu0fpD8oLLssFcaW0fsVXUkA1/jDLopa554Z1AZo5SKtekHnnmyat0ipiP0snKDrt0GNg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="/dist/output.css"> -->
+    <link rel="stylesheet" href="build.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="bg-[#121927]">
+
+    <!-- Navbar -->
+    <div class="bg-slate-800 sticky top-0 z-10">
+        <div class="container mx-auto p-3 lg:px-32">
+                <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <img src="logo.svg" class="w-10 mr-2" alt="">
+                    <span class="text-slate-200 text-xl hidden md:flex">berryleaf</span>
+                </div>
+
+                <!-- Menu -->
+                <div class="text-slate-400">
+                    <ul class="flex items-center space-x-3 text-xs md:text-base">
+                        <li>Home</li>
+                        <li>Why?</li>
+                        <li>Feature</li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+
+                <!-- Dark mode button -->
+                <div class="">
+                    <button id="dark-switch" onclick="toggleTheme()" class="shadow w-[72px] flex items-center transition duration-200 rounded-full bg-slate-800 p-1 scale-50">
+                        <div id="dark-switch-icon" class="bg-slate-50 w-8 h-8 rounded-full transform transition duration-200 flex justify-center items-center">
+                            <i class="fa-regular fa-sun"></i>
+                        </div>
+                        <h6 id="dark-text" class="text-slate-200 dark:text-slate-900 translate-x-1">FF</h6>
+                    </button>
+                    <!-- <h1 id="dark-text-change" class="text-center text-3xl font-bold dark:text-slate-200">Light</h1> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog slide -->
+    <div class="container mx-auto px-3 lg:px-32 relative mb-28">
+
+
+        <!-- Slider main container -->
+        <div class="swiper mt-28 headline">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="relative rounded-2xl overflow-hidden">
+                        <img class="w-full h-96 object-cover" src="https://images.unsplash.com/photo-1661961111184-11317b40adb2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80" alt="">
+                        <div class="absolute bottom-10 left-10">
+                            <h1 class="text-3xl text-white mb-3">
+                                How CPTS empowers job-ready penetration testing skills in cybersecurity teams
+                            </h1>
+                            <div class="">
+                                <button class="bg-slate-700 py-1 p-2 rounded-lg text-white">10 min read</button>
+                                <span>Oct 4, 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="relative rounded-2xl overflow-hidden">
+                        <img class="w-full h-96 object-cover" src="https://images.unsplash.com/photo-1661961111184-11317b40adb2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80" alt="">
+                        <div class="absolute bottom-10 left-10">
+                            <h1 class="text-3xl text-white mb-3">
+                                How CPTS empowers job-ready penetration testing skills in cybersecurity teams
+                            </h1>
+                            <div class="">
+                                <button class="bg-slate-700 py-1 p-2 rounded-lg text-white">10 min read</button>
+                                <span>Oct 4, 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="relative rounded-2xl overflow-hidden">
+                        <img class="w-full h-96 object-cover" src="https://images.unsplash.com/photo-1661961111184-11317b40adb2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80" alt="">
+                        <div class="absolute bottom-10 left-10">
+                            <h1 class="text-3xl text-white mb-3">
+                                How CPTS empowers job-ready penetration testing skills in cybersecurity teams
+                            </h1>
+                            <div class="">
+                                <button class="bg-slate-700 py-1 p-2 rounded-lg text-white">10 min read</button>
+                                <span>Oct 4, 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+        <div class="swiper-button-prev bg-slate-200 w-16 h-16 rounded-full text-[#121927] absolute lg:left-24 border-4 border-[#121927] hidden md:flex"></div>
+        <div class="swiper-button-next bg-slate-200 w-16 h-16 rounded-full text-[#121927] absolute right-0 lg:right-24 border-4 border-[#121927] hidden md:flex"></div>
+
+
+
+
+        
+    </div>
+
+    <!-- Member Section -->
+    <div class="container mx-auto px-3 lg:px-32 mb-28">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-10">
+            <div class="text-center headline">
+                <h1 class=" text-emerald-500 text-3xl font-bold">500+ M</h1>
+                <p class=" text-slate-300">Hacking Labs</p>
+            </div>
+            <div class="text-center headline">
+                <h1 class=" text-emerald-500 text-3xl font-bold">400+ M</h1>
+                <p class=" text-slate-300">Platform Members</p>
+            </div>
+            <div class="text-center headline">
+                <h1 class=" text-emerald-500 text-3xl font-bold">300+ M</h1>
+                <p class=" text-slate-300">Playtime Hours</p>
+            </div>
+            <div class="text-center headline">
+                <h1 class=" text-emerald-500 text-3xl font-bold">300+ K</h1>
+                <p class=" text-slate-300">Companies & Universities</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Card section -->
+    <div class="container mx-auto px-3 lg:px-32 mb-28">
+        <div class="mb-14 headline">
+            <h1 class="text-slate-100 text-xl font-bold">How Hackers Digest</h1>
+            <p class="text-slate-400">Want to dive in deeper into a specific category? Click on a topic below.</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <!-- Card -->
+            <div class="bg-[#1A2332] p-5 rounded-3xl space-y-2 headline">
+                <img class="rounded-2xl" src="https://images.unsplash.com/photo-1494260629490-28c1e8e6f388?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80" alt="">
+                <div>
+                    <span class="text-slate-400 text-xs">HACKING |</span>
+                    <span class="text-slate-400 text-xs">10 MIN READ</span>
+                </div>
+                <h2 class="text-slate-100 text-2xl">
+                    From poker player to Senior Pentester at Oracle: Jeremy's journey into cybersec
+                </h2>
+            </div>
+            <div class="bg-[#1A2332] p-5 rounded-3xl space-y-2 headline">
+                <img class="rounded-2xl" src="https://images.unsplash.com/photo-1494260629490-28c1e8e6f388?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80" alt="">
+                <div>
+                    <span class="text-slate-400 text-xs">HACKING |</span>
+                    <span class="text-slate-400 text-xs">10 MIN READ</span>
+                </div>
+                <h2 class="text-slate-100 text-2xl">
+                    From poker player to Senior Pentester at Oracle: Jeremy's journey into cybersec
+                </h2>
+            </div>
+            <div class="bg-[#1A2332] p-5 rounded-3xl space-y-2 headline">
+                <img class="rounded-2xl" src="https://images.unsplash.com/photo-1494260629490-28c1e8e6f388?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80" alt="">
+                <div>
+                    <span class="text-slate-400 text-xs">HACKING |</span>
+                    <span class="text-slate-400 text-xs">10 MIN READ</span>
+                </div>
+                <h2 class="text-slate-100 text-2xl">
+                    From poker player to Senior Pentester at Oracle: Jeremy's journey into cybersec
+                </h2>
+            </div>
+            <div class="bg-[#1A2332] p-5 rounded-3xl space-y-2 headline">
+                <img class="rounded-2xl" src="https://images.unsplash.com/photo-1494260629490-28c1e8e6f388?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80" alt="">
+                <div>
+                    <span class="text-slate-400 text-xs">HACKING |</span>
+                    <span class="text-slate-400 text-xs">10 MIN READ</span>
+                </div>
+                <h2 class="text-slate-100 text-2xl">
+                    From poker player to Senior Pentester at Oracle: Jeremy's journey into cybersec
+                </h2>
+            </div>
+            <div class="bg-[#1A2332] p-5 rounded-3xl space-y-2 headline">
+                <img class="rounded-2xl" src="https://images.unsplash.com/photo-1494260629490-28c1e8e6f388?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80" alt="">
+                <div>
+                    <span class="text-slate-400 text-xs">HACKING |</span>
+                    <span class="text-slate-400 text-xs">10 MIN READ</span>
+                </div>
+                <h2 class="text-slate-100 text-2xl">
+                    From poker player to Senior Pentester at Oracle: Jeremy's journey into cybersec
+                </h2>
+            </div>
+            <div class="bg-[#1A2332] p-5 rounded-3xl space-y-2 headline">
+                <img class="rounded-2xl" src="https://images.unsplash.com/photo-1494260629490-28c1e8e6f388?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80" alt="">
+                <div>
+                    <span class="text-slate-400 text-xs">HACKING |</span>
+                    <span class="text-slate-400 text-xs">10 MIN READ</span>
+                </div>
+                <h2 class="text-slate-100 text-2xl">
+                    From poker player to Senior Pentester at Oracle: Jeremy's journey into cybersec
+                </h2>
+            </div>
+        </div>
+    </div>
+    
+    <!-- <script src="/node_modules/swiper/swiper-bundle.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.js" integrity="sha512-k2o1KZdvUi59PUXirfThShW9Gdwtk+jVYum6t7RmyCNAVyF9ozijFpvLEWmpgqkHuqSWpflsLf5+PEW6Lxy/wA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+</body>
+</html>
